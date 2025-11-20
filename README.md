@@ -160,7 +160,7 @@ Jalankan kelima perintah pada bagian API Endpoints untuk mengecek:
 
 Tampilan dokumentasi HTML bawaan saat membuka `http://localhost:6543/`:
 
-![Demo halaman utama](static/demo.png)
-![Demo daftar endpoint](static/demo1.png)
+![Demo halaman utama](demo.png)
+![Demo daftar endpoint](demo1.png)
 
  
