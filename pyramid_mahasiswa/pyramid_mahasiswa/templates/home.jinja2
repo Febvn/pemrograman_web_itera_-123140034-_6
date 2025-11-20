@@ -1,0 +1,82 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="content">
+  <h1>API Manajemen Matakuliah</h1>
+  <p class="lead">Selamat datang di API Manajemen Matakuliah</p>
+  
+  <div class="api-info">
+    <h2>Dokumentasi API</h2>
+    <p>Berikut adalah endpoint yang tersedia:</p>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Endpoints</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Endpoint</th>
+              <th>Deskripsi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="label label-primary">GET</span></td>
+              <td><code>/api/matakuliah</code></td>
+              <td>Mengambil daftar semua matakuliah</td>
+            </tr>
+            <tr>
+              <td><span class="label label-info">GET</span></td>
+              <td><code>/api/matakuliah/{id}</code></td>
+              <td>Mengambil detail matakuliah berdasarkan ID</td>
+            </tr>
+            <tr>
+              <td><span class="label label-success">POST</span></td>
+              <td><code>/api/matakuliah</code></td>
+              <td>Membuat matakuliah baru</td>
+            </tr>
+            <tr>
+              <td><span class="label label-warning">PUT</span></td>
+              <td><code>/api/matakuliah/{id}</code></td>
+              <td>Mengupdate matakuliah berdasarkan ID</td>
+            </tr>
+            <tr>
+              <td><span class="label label-danger">DELETE</span></td>
+              <td><code>/api/matakuliah/{id}</code></td>
+              <td>Menghapus matakuliah berdasarkan ID</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Contoh Request</h3>
+      </div>
+      <div class="panel-body">
+        <h4>POST /api/matakuliah</h4>
+        <pre>{
+  "kode_mk": "IF101",
+  "nama_mk": "Algoritma",
+  "sks": 3,
+  "semester": 1
+}</pre>
+        
+        <h4>PUT /api/matakuliah/{id}</h4>
+        <pre>{
+  "kode_mk": "IF101",
+  "nama_mk": "Algoritma Pemrograman",
+  "sks": 4,
+  "semester": 2
+}</pre>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+
